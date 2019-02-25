@@ -1,0 +1,179 @@
+body {	
+    margin: 0;
+    color: #333;
+    font: 16px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+	font-style:italic;
+}
+
+body > header {
+    position: relative;    
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin-top: 30px;
+}
+
+body > header:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+h1, h2, h3 {
+    font: 300 16px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;   
+    text-transform: uppercase;
+    font-size: 1.2em;	
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2{
+	color: white;
+    background-color: #39B;
+	text-align: center;
+    padding: 7px 0;
+    margin-bottom: 3px;
+}
+
+main {    
+    width: 60%;   
+    margin: 0 auto;
+}
+	
+div.offer {
+	margin-top: 40px;
+}
+
+.offer > p, .offer > a{
+	padding-left:20px;
+}
+
+#scraper {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -26px;
+    border: 2px solid whitesmoke;
+    border-right: 0;
+    padding: 0 10px;
+}
+
+footer {
+	margin-bottom: 40px;
+}
+
+/*================================================
+Start link underline
+==================================================*/
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.3s ease-in;
+}
+.underline--magical:hover {
+    background-size: 100% 100%;
+  }
+
+/*================================================
+End link underline
+==================================================*/
+
+
+/* Contact Form
+.....................*/
+
+form {
+  margin-bottom: 22px;
+}
+input,
+textarea {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.contact-form label {
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.contact-form input,
+.contact-form textarea{
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  color: #555;
+  display: block;
+  margin: 5px 0 24px 0;
+  padding: 5px 8px;
+}
+.contact-form {
+	border: 0;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form p {
+  width: 100%;
+}
+.contact-form textarea {
+  height: 100px;
+  resize: vertical;
+  overflow: hidden;
+}
+
+/* Buttons
+.................*/
+
+.btn{
+	border-radius: 5px;
+	display: inline-block;
+	margin: 0;
+	color: #fff;
+    cursor: pointer;
+	font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+.btn-default, .btn-form {
+  border: 0;
+  background-color: #ea4c4c;
+  padding: 9px 30px;
+  font-size: 14px;
+}
+.btn-default:hover {
+  background-color: #77a198;
+}
+
+.btn-form {
+	position: relative;
+	border: 1px solid #fff;
+}
+
+
+.btn-form {
+	-moz-transition: all 400ms cubic-bezier(.165,.84,.44,1);
+    -o-transition: all 400ms cubic-bezier(.165,.84,.44,1);
+    -webkit-transition: all 400ms cubic-bezier(.165,.84,.44,1);
+	transition: all 400ms cubic-bezier(.165,.84,.44,1);
+}
+
+.btn-form:hover {
+  border: 1px solid #ea4c4c;
+  background-color: #fff;
+  color: #ea4c4c;
+}
