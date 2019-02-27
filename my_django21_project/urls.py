@@ -31,8 +31,7 @@ urlpatterns = [
     path('blog/bios.html/', views.sim_bios, name='sim_bios'),
     path('blog/contact.html/', views.blog_contact, name='blog_contact'),
     path('admin/', admin.site.urls),
-    path('index/', views.offer_list, name="home_page"),
     url(r'^tinymce/', include('tinymce.urls')),
     url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
-	url(r'^$', views.post_list_view, name='post_list_view'),
+    url(r'^$', views.post_list_view, name='post_list_view'),
 ]
