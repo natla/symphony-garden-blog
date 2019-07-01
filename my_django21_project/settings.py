@@ -28,7 +28,7 @@ DEBUG = True
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'https://symphony-garden.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'symphony-garden.herokuapp.com', 'https://symphony-garden.herokuapp.com']
 
 # Application definition
 
@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'markdown_deux',
     'myapp',
-    'tinymce',
     'django.contrib.sites',
     'django.contrib.sitemaps',
 ]
