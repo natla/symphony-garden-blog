@@ -285,6 +285,11 @@ blockquote {
     margin: 1em 20px;
 }
 
+u {
+    text-decoration: none;
+    border-bottom: 2px solid #FFDBE2;
+}
+
 /* Images */
 
 img, img a, .post-body img{
@@ -292,11 +297,11 @@ img, img a, .post-body img{
     margin: 18px auto 3px;
     border: none !important;
     background: none !important;
-    opacity: .78;
-    filter: alpha(opacity=100);
-    -o-transition: opacity 1.5s linear;
-    -webkit-transition: opacity 1.5s linear;
-    -moz-transition: opacity 1.5s linear;
+    opacity: 0.74;
+    filter: alpha(opacity=74);
+    -o-transition: all 1.5s linear;
+    -webkit-transition: all 1.5s linear;
+    -moz-transition: all 1.5s linear;
     border-radius: 10px;
     cursor: url(../images/oth640.cur), progress;
 }

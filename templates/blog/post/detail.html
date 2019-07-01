@@ -4,6 +4,6 @@
 
 {% block content %}
     <h3 class="post-title">{{ post.title }}</h3>
-    <p>{{ post.body|safe }}</p>
+    <section class="post-body">{{ post.body|safe }}</section>
 	<p class="post-footer">Published {{ post.publish }} by {{ post.author }}</p>
 {% endblock %}
