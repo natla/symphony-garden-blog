@@ -1,4 +1,5 @@
 from django.contrib import admin
+
 from .models import Post
 
 
@@ -12,5 +13,4 @@ class PostAdmin(admin.ModelAdmin):
     ordering = ['status', 'publish']
 
 
-# Register your models here.
 admin.site.register(Post, PostAdmin)

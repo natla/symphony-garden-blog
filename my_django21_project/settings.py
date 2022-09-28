@@ -28,7 +28,7 @@ DEBUG = True
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'symphony-garden.herokuapp.com', 'https://symphony-garden.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'symphony-garden.fly.dev']
 
 # Application definition
 
@@ -134,7 +134,3 @@ STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 SITE_ID = 1
-
-# Configure Django App for Heroku.
-# import django_heroku
-# django_heroku.settings(locals())

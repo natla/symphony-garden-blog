@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import url, include
-from django.urls import path
-from myapp import views
 from django.contrib.sitemaps.views import sitemap
+from django.urls import path
+
+from myapp import views
 from myapp.sitemaps import PostSitemap
 
 # Create a sitemaps dictionary:
