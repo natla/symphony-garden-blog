@@ -7,7 +7,7 @@ from django.urls import reverse
 # Custom Manager
 class PublishedManager(models.Manager):
     def get_queryset(self):
-        return super(PublishedManager, self).get_queryset().filter(status='published')
+        return super().get_queryset().filter(status='published')
 
 
 # Post Model
@@ -36,7 +36,7 @@ class Post(models.Model):
         ordering = ('-publish',)
 
     def __str__(self):
-        return self.title
+        return str(self.title)
 
     def get_absolute_url(self):
         """Returns the url to access a particular instance of the model."""
