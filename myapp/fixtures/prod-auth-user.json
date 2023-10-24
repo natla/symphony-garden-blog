@@ -1,0 +1,18 @@
+[
+    {
+        "model": "auth.user",
+        "fields": {
+            "username": "natla",
+            "first_name": "",
+            "last_name": "",
+            "email": "dagmar.eber@gmail.com",
+            "password": "pbkdf2_sha256$260000$yvVDmVsLr9i0jPsaKAmkoI$o9oL4jVYSuwksIHt2WUwmDlWB+tfW/2ECmmbGhwfYyY=",
+            "is_superuser": true,
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2023-10-23T19:08:41.568Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

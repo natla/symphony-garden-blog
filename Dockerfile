@@ -1,4 +1,4 @@
-ARG PYTHON_VERSION=3.7
+ARG PYTHON_VERSION=3.8
 
 FROM python:${PYTHON_VERSION}
 
@@ -22,7 +22,7 @@ COPY . .
 
 RUN python manage.py migrate
 RUN python manage.py collectstatic --noinput
-
+RUN python manage.py fixtures
 
 EXPOSE 8080
 
